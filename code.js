@@ -1,5 +1,14 @@
-
+localStorage.setItem('myUL', JSON.stringify(myUL));
 var myNodelist = document.getElementsByTagName("LI");
+
+// var myNodeList = document.querySelectorAll("LI")
+// let m = [...listItem].map(function(item) {
+//     return {
+//         text: item.querySelector('.title').textContent.trim()
+//     }
+// })
+// localStorage.setItem('layoutlist', JSON.stringify(m));
+
 var i;
 for (i = 0; i < myNodelist.length; i++) {
 var span = document.createElement("SPAN");
@@ -8,6 +17,10 @@ span.className = "close";
 span.appendChild(txt);
 myNodelist[i].appendChild(span);
 }
+//var listitem = document.querySelector('.each-cart-row').textContent;
+  //localStorage.setItem('layoutlist', listitem);
+  //console.log(localStorage);
+
 
 
 var close = document.getElementsByClassName("close");
@@ -53,6 +66,8 @@ for (i = 0; i < close.length; i++) {
     }
 }
 }
+
+
 
 
 
